@@ -25,7 +25,7 @@ class RunActor(object):
         """
         start = time.time()
         self.prepare_env()
-        for key, ref, token in self.iterator:            
+        for key, ref, token in self.iterator:
             self.prepare_run()
             self.process_token(ref, token)
             self.cleanup_run()
@@ -58,7 +58,7 @@ class RunActor(object):
         """
         modification = ()
         for k, v in token.iteritems():
-            print k, v
+            print(k, v)
         raise NotImplementedError
         return modification
 
